@@ -5,6 +5,9 @@ tic
 % 1-) Grid type has only one unique value so it has to be extracted, double check please
 % 2-) I believe game ID style data might not be effective in decision maybe
 % these have to be extracted
+% 3-) We should add headers to the latest file, it will be better for
+% python
+
 
 
 
@@ -81,6 +84,10 @@ for i=[1 3 4 5 6 7 8 9 11 12 13 15 16 17 18 19 20 21 22 23 24 26 ...
 end
 
 
+% Writing output as a csv file and setting NaN values to -1 
+
+num_ordered_features(isnan(num_ordered_features)) = -1; 
+csvwrite('joined_shots_updated2013.csv',num_ordered_features);
 
 
 toc
