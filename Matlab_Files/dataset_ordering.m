@@ -1,16 +1,6 @@
 clc;clear all; close all;
 tic
 
-%Questions BURAK: 
-% 1-) Grid type has only one unique value so it has to be extracted, double check please
-% 2-) I believe game ID style data might not be effective in decision maybe
-% these have to be extracted
-% 3-) We should add headers to the latest file, it will be better for
-% python
-
-
-
-
 % T1 = readtable('all_chart_2013.csv');
 % T2 = readtable('all_shots_2013.csv');
 T = readtable('joined_shots_2013.csv');
